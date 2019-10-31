@@ -24,7 +24,7 @@ namespace Dominik_feladat0
 
 
             //ez a sor utás ne írj!!
-            Class1.test(a, b, c, d, e);
+            
             Console.ReadKey();
         }
     }
