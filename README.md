@@ -1,4 +1,4 @@
 # Programozás magyarázáshoz és segítséghez
  C# bevezető
- egyébb példág amik hasznosak lehetnek
+ C/C++, Python példág amik hasznosak lehetnek
  
