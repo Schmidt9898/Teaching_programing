@@ -16,19 +16,19 @@ void goodPointers()
     std::cout << "Int_var_pointer value is = " << int_var_pointer << "\n";
     //This int_var_pointer is still a variable but the value is the addres of int_var
     //changing this value will not change the int_var but will point to a different point in  the memory.
-    //you can change the value of int_var with int_var_pointer if you dereferec the object.
+    //you can change the value of int_var with int_var_pointer if you dereferenc the object.
     *int_var_pointer += 1; //++ is not working if it is postfix.
     std::cout << "Int_var value is changed = " << int_var << "\n";
 
     //Pointer used to allocate dinamic memory like arrays and objects
 
-    int* array;//this hase no memory behind it
+    int* array;//this has no memory behind it
     array = new int(10);
     std::cout << "array points to an integer addres  with value of " << *array << "\n";
     delete array; //this will deallocate the memory
     //please if you allocate memory always delete it. you only can delete it by the addres, if you overwrite it or forget it you can no longer delete it.
-    // dont worry if you close the program the memory will be deleted.
-    //array still point to the memory that the int was located but now that memory is not ours so reaching for it will cause a segmentation fault
+    //dont worry, if you close the program the memory will be deleted.
+    //array stil point to the memory that the int was located but now that memory is not ours so reaching for it will cause a segmentation fault
     //*array = 1;//if you try to run this may or may not will be an error
 
     //lets allocate more memory
@@ -90,7 +90,7 @@ void badPointers()
     //Next row wont compile because one is private
     //std::cout<<obj.one<<"\n";
     
-    //a struct pusts the variable as an array with elemsize of the largest element
+    //a struct puts the variables as an array with elemsize of the largest element
     //(sometimes can be efficient with the small variables)
     //so if you want to reach the one variable, you have to index the obj
     int* obj_p = (int*)&obj;
