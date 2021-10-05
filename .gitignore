@@ -1,0 +1,14 @@
+
+C++_érdekességek/.vs/**
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.recipe
+*.ilk
+*.log
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.exe

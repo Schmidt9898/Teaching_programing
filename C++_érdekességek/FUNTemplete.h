@@ -32,6 +32,7 @@ public :
 
 
 //a ssimple int print
+//Print num darab integert
 void Print_int(int num, ...)
 {
     cout<<"Unlimited power...  ";
@@ -54,6 +55,9 @@ string helpPrint()
 {
     return "";
 }
+
+
+//teleszkóp függvényhívás
 template<class First,class... Args>
 string helpPrint(First f, Args... rest)
 {
@@ -70,6 +74,8 @@ void Print(First f, Args... rest)
 
 }
 
+
+//teleszkóp függvényhívás
 template<typename num,typename... nums>
 num mymax(num a,num b)
 {
