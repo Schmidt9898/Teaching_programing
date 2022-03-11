@@ -5,7 +5,7 @@ print("Generating random database")
 
 numberofentry=100000
 passpoolid=0
-passpool=["10-million-password-list-top-100.txt","10-million-password-list-top-100000.txt"]
+passpool=["data_samples/10-million-password-list-top-100.txt","data_samples/10-million-password-list-top-100000.txt"]
 
 noinevek=[]
 ferfinevek=[]
@@ -15,10 +15,10 @@ try:
 	with open(passpool[passpoolid],encoding="utf8") as file:
 		passwords = file.readlines()
 		passwords = [line.rstrip() for line in passwords]
-	with open("osszesffi.txt",encoding="utf8") as file:
+	with open("data_samples/osszesffi.txt",encoding="ansi") as file:
 		ferfinevek = file.readlines()
 		ferfinevek = [line.rstrip() for line in ferfinevek]
-	with open("osszesnoi.txt",encoding="utf8") as file:
+	with open("data_samples/osszesnoi.txt",encoding="ansi") as file:
 		noinevek = file.readlines()
 		noinevek = [line.rstrip() for line in noinevek]
 except Exception as e:
@@ -67,6 +67,7 @@ for i in range(int(numberofentry*0.75)):
 
 
 
-f = open("database.txt", "w")
+f = open("data_samples/database.txt", "w")
 f.writelines([p.todata() for p in people])
 f.close()
+print("Database was generated!")

@@ -16,6 +16,5 @@ python_alapok/__pycache__/*
 python_alapok/10-million-password-list-top-100.txt
 python_alapok/10-million-password-list-top-100000.txt
 python_alapok/database.txt
+python_alapok/data_samples/*
 python_alapok/Lordi-need-to-learn/*
-python_alapok/osszesffi.txt
-python_alapok/osszesnoi.txt
